@@ -1,13 +1,7 @@
 <?php
 
-function sum($a, $b)
-{
-    $s = $a + $b;
-    return "Jevgenij says, that $a + $b = $s\n";
-}
+include "src/Sum.php";
 
-$a = 10;
-$b = 15;
-
-echo sum($a, $b);
+$sum = new FFormula\Sum();
+echo $sum->sum(15, 25);
 
